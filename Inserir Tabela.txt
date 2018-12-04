@@ -1,0 +1,62 @@
+INSERT INTO CLIENTE(id,CPF,NOME,TELEFONE,CIDADE,EMAIL)
+VALUES (1,'78046393096','Diego Cavalcanti Sousa','(43) 8217-8930','Piracicaba-SP','DiegoCavalcantiSousa@dayrep.com');
+INSERT INTO CLIENTE(id,CPF,NOME,TELEFONE,CIDADE,EMAIL)
+VALUES (2,'45725626016','Kauê Oliveira Santos','(83) 7497-9540','Pinhais-PR','KaueOliveiraSantos@armyspy.com');
+INSERT INTO CLIENTE(id,CPF,NOME,TELEFONE,CIDADE,EMAIL)
+VALUES (3,'47321120058','Arthur Dias Silva','(11) 7352-2452','Limeira-SP','ArthurDiasSilva@rhyta.com');
+INSERT INTO CLIENTE(id,CPF,NOME,TELEFONE,CIDADE,EMAIL)
+VALUES (4,'48975603067','Júlio Azevedo Correia','(19) 8719-2689','Macaé-RJ','JulioAzevedoCorreia@jourrapide.com');
+INSERT INTO CLIENTE(id,CPF,NOME,TELEFONE,CIDADE,EMAIL)
+VALUES (5,'24188776048','Alice Barbosa Oliveira','(31) 6205-9252','Niterói-RJ','AliceBarbosaOliveira@teleworm.us');
+INSERT INTO CLIENTE(id,CPF,NOME,TELEFONE,CIDADE,EMAIL)
+VALUES (6,'68500945052','Enzo Pinto Pereira','(61) 7366-2453','Guararapes-PE','EnzoPintoPereira@rhyta.com');
+INSERT INTO CLIENTE(id,CPF,NOME,TELEFONE,CIDADE,EMAIL)
+VALUES (7,'85053266018','Carla Pereira Lima','(11) 5894-4759','Rio de Janeiro-RJ','CarlaPereiraLima@armyspy.com');
+INSERT INTO CLIENTE(id,CPF,NOME,TELEFONE,CIDADE,EMAIL)
+VALUES (8,'02583098063','Bruno Rocha Alves','(11) 3394-9835','Guararapes-PE','BrunoRochaAlves@armyspy.com');
+INSERT INTO CLIENTE(id,CPF,NOME,TELEFONE,CIDADE,EMAIL)
+VALUES (9,'63002167053','Kai Azevedo Lima','(11) 9202-4510','Timóteo-MG','KaiAzevedoLima@rhyta.com');
+INSERT INTO CLIENTE(id,CPF,NOME,TELEFONE,CIDADE,EMAIL)
+VALUES (10,'33668167087','José Sousa Gomes','(11) 7330-3020','Londrina-PR','JoseSousaGomes@rhyta.com');
+
+INSERT INTO CORRETOR(id,CRECI,NOME,TELEFONE,CIDADE,EMAIL)
+VALUES (1,'57693','Sophia Araujo Gomes','(82) 9581-3045','Índios-AL','SophiaAraujoGomes@armyspy.com');
+INSERT INTO CORRETOR(id,CRECI,NOME,TELEFONE,CIDADE,EMAIL)
+VALUES (2,'58421','Letícia Cunha Ferreira','(81) 4205-6609','Recife-PE','LeticiaCunhaFerreira@armyspy.com');
+INSERT INTO CORRETOR(id,CRECI,NOME,TELEFONE,CIDADE,EMAIL)
+VALUES (3,'11953','Diego Gomes Santos','(22) 3210-7156','Cabo Frio-RJ','DiegoGomesSantos@jourrapide.com');
+INSERT INTO CORRETOR(id,CRECI,NOME,TELEFONE,CIDADE,EMAIL)
+VALUES (4,'45746','Larissa Pinto Barros','(43) 2326-9203','Londrina-PR','LarissaPintoBarros@dayrep.com');
+INSERT INTO CORRETOR(id,CRECI,NOME,TELEFONE,CIDADE,EMAIL)
+VALUES (5,'59433','Clara Araujo Goncalves','(21) 8530-3513','Rio de Janeiro-RJ','ClaraAraujoGoncalves@rhyta.com');
+INSERT INTO CORRETOR(id,CRECI,NOME,TELEFONE,CIDADE,EMAIL)
+VALUES (6,'91952','Camila Azevedo Oliveira','(21) 8481-9636','Rio de Janeiro-RJ','CamilaAzevedoOliveira@dayrep.com');
+INSERT INTO CORRETOR(id,CRECI,NOME,TELEFONE,CIDADE,EMAIL)
+VALUES (7,'21080','Kauê Barros Correia','(66) 6177-5850','Rondonópolis-MT','KaueBarrosCorreia@dayrep.com');
+INSERT INTO CORRETOR(id,CRECI,NOME,TELEFONE,CIDADE,EMAIL)
+VALUES (8,'34877','Enzo Cardoso Sousa','(75) 7428-5748','Feira de Santana-BA','EnzoCardosoSousa@teleworm.us');
+INSERT INTO CORRETOR(id,CRECI,NOME,TELEFONE,CIDADE,EMAIL)
+VALUES (9,'09805','Gabriela Araujo Cardoso','(11) 2611-5787','São Paulo-SP','GabrielaAraujoCardoso@armyspy.com');
+INSERT INTO CORRETOR(id,CRECI,NOME,TELEFONE,CIDADE,EMAIL)
+VALUES (10,'24009','Julian Almeida Alves','(81) 5726-7106','Mata-PE','JulianAlmeidaAlves@teleworm.us');
+
+INSERT INTO IMOVEL(id,Endereco,Codigo,Area,Valor,Tipo,QuantComodos)
+VALUES (1,'Rua Quitéria M. de Jesus, 1663','96812403467',844.94,67121.19,'Casa',5);
+INSERT INTO IMOVEL(id,Endereco,Codigo,Area,Valor,Tipo,QuantComodos)
+VALUES (2,'Rua Cinco-A, 241','37835226600',901.89,54455.68,'Casa',9);
+INSERT INTO IMOVEL(id,Endereco,Codigo,Area,Valor,Tipo,QuantComodos)
+VALUES (3,'Rua dos Antúrios, 48','26711679376',279.28,89124.51,'Casa',4);
+INSERT INTO IMOVEL(id,Endereco,Codigo,Area,Valor,Tipo,QuantComodos)
+VALUES (4,'Rua Tupi, 80','18859205932',605.11,16863.23,'Apartamento',9);
+INSERT INTO IMOVEL(id,Endereco,Codigo,Area,Valor,Tipo,QuantComodos)
+VALUES (5,'Rua Itororos, 1099','87809460496',945.05,10777.80,'Casa',3);
+INSERT INTO IMOVEL(id,Endereco,Codigo,Area,Valor,Tipo,QuantComodos)
+VALUES (6,'Rua Manoel Orácio da Silva, 855','21898826444',656.30,89934.49,'Apartamento',8);
+INSERT INTO IMOVEL(id,Endereco,Codigo,Area,Valor,Tipo,QuantComodos)
+VALUES (7,'Rua 3 Unidade 201, 1740','39359953240',515.01,44361.12,'Casa',5);
+INSERT INTO IMOVEL(id,Endereco,Codigo,Area,Valor,Tipo,QuantComodos)
+VALUES (8,'Rua Presidente Castelo Branco, 602','04041191823',901.18,43663.33,'Apartamento',8);
+INSERT INTO IMOVEL(id,Endereco,Codigo,Area,Valor,Tipo,QuantComodos)
+VALUES (9,'Rua Dezessete de Setembro, 895','62154808248',135.06,12392.33,'Apartamento',3);
+INSERT INTO IMOVEL(id,Endereco,Codigo,Area,Valor,Tipo,QuantComodos)
+VALUES (10,'Rua E. Nunes, 276','69855179284',376.98,99742.16,'Apartamento',3);
