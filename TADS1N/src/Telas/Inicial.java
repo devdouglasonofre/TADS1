@@ -37,6 +37,7 @@ public class Inicial extends javax.swing.JFrame {
         BTN_faturamenti = new javax.swing.JButton();
         BTN_pagamento = new javax.swing.JButton();
         pane = new javax.swing.JDesktopPane();
+        BTN_fecharTudo = new javax.swing.JButton();
 
         BTN_Cliente3.setBackground(new java.awt.Color(255, 255, 255));
         BTN_Cliente3.setFont(new java.awt.Font("Yu Gothic Light", 0, 48)); // NOI18N
@@ -96,6 +97,11 @@ public class Inicial extends javax.swing.JFrame {
         BTN_telaCorretor.setMinimumSize(new java.awt.Dimension(120, 120));
         BTN_telaCorretor.setName(""); // NOI18N
         BTN_telaCorretor.setPreferredSize(new java.awt.Dimension(240, 240));
+        BTN_telaCorretor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTN_telaCorretorActionPerformed(evt);
+            }
+        });
 
         BTN_telaImovel.setBackground(new java.awt.Color(255, 255, 255));
         BTN_telaImovel.setFont(new java.awt.Font("Yu Gothic Light", 0, 48)); // NOI18N
@@ -112,6 +118,11 @@ public class Inicial extends javax.swing.JFrame {
         BTN_telaImovel.setMinimumSize(new java.awt.Dimension(120, 120));
         BTN_telaImovel.setName(""); // NOI18N
         BTN_telaImovel.setPreferredSize(new java.awt.Dimension(240, 240));
+        BTN_telaImovel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTN_telaImovelActionPerformed(evt);
+            }
+        });
 
         BTN_telaClientei.setBackground(new java.awt.Color(255, 255, 255));
         BTN_telaClientei.setFont(new java.awt.Font("Yu Gothic Light", 0, 48)); // NOI18N
@@ -170,12 +181,33 @@ public class Inicial extends javax.swing.JFrame {
         pane.setLayout(paneLayout);
         paneLayout.setHorizontalGroup(
             paneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 636, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         paneLayout.setVerticalGroup(
             paneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 631, Short.MAX_VALUE)
         );
+
+        BTN_fecharTudo.setBackground(new java.awt.Color(255, 255, 255));
+        BTN_fecharTudo.setFont(new java.awt.Font("Yu Gothic Light", 0, 36)); // NOI18N
+        BTN_fecharTudo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Telas/Fechar_Icon.png"))); // NOI18N
+        BTN_fecharTudo.setText("Fechar Janelas");
+        BTN_fecharTudo.setToolTipText("");
+        BTN_fecharTudo.setBorder(null);
+        BTN_fecharTudo.setBorderPainted(false);
+        BTN_fecharTudo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BTN_fecharTudo.setDefaultCapable(false);
+        BTN_fecharTudo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        BTN_fecharTudo.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        BTN_fecharTudo.setMaximumSize(new java.awt.Dimension(240, 240));
+        BTN_fecharTudo.setMinimumSize(new java.awt.Dimension(120, 120));
+        BTN_fecharTudo.setName(""); // NOI18N
+        BTN_fecharTudo.setPreferredSize(new java.awt.Dimension(240, 240));
+        BTN_fecharTudo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTN_fecharTudoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -186,26 +218,27 @@ public class Inicial extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(BTN_telaCorretor, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(BTN_faturamenti, javax.swing.GroupLayout.DEFAULT_SIZE, 340, Short.MAX_VALUE)
                             .addComponent(BTN_telaImovel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(BTN_pagamento, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(BTN_faturamenti, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(BTN_telaClientei, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(BTN_telaCorretor, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(BTN_telaClientei, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(BTN_pagamento, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(pane))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(507, 507, 507)
+                        .addComponent(BTN_fecharTudo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(25, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(BTN_fecharTudo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(BTN_telaClientei, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -214,9 +247,9 @@ public class Inicial extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(BTN_telaImovel, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(BTN_faturamenti, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(BTN_pagamento, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(BTN_pagamento, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(BTN_faturamenti, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(pane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
@@ -232,6 +265,39 @@ public class Inicial extends javax.swing.JFrame {
             telaCliente.getInstancia().requestFocus();
         }
     }//GEN-LAST:event_BTN_telaClienteiActionPerformed
+
+    private void BTN_telaCorretorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_telaCorretorActionPerformed
+        if (!telaCorretor.getInstancia().isVisible()) {
+            pane.add(telaCorretor.getInstancia());
+            telaCorretor.getInstancia().setVisible(true);
+        } else {
+            telaCorretor.getInstancia().requestFocus();
+        }
+    }//GEN-LAST:event_BTN_telaCorretorActionPerformed
+
+    private void BTN_telaImovelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_telaImovelActionPerformed
+       if (!telaImovel.getInstancia().isVisible()) {
+            pane.add(telaImovel.getInstancia());
+            telaImovel.getInstancia().setVisible(true);
+        } else {
+            telaImovel.getInstancia().requestFocus();
+        }
+    }//GEN-LAST:event_BTN_telaImovelActionPerformed
+
+    private void BTN_fecharTudoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_fecharTudoActionPerformed
+      if (telaImovel.getInstancia().isVisible() || 
+              telaCliente.getInstancia().isVisible() || 
+              telaCorretor.getInstancia().isVisible()) {
+            pane.remove(telaImovel.getInstancia());
+            pane.remove(telaCliente.getInstancia());
+            pane.remove(telaCorretor.getInstancia());
+            telaImovel.getInstancia().setVisible(false);
+            telaCliente.getInstancia().setVisible(false);
+            telaCorretor.getInstancia().setVisible(false);
+            pane.validate();
+            pane.repaint();
+        }
+    }//GEN-LAST:event_BTN_fecharTudoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -271,6 +337,7 @@ public class Inicial extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BTN_Cliente3;
     private javax.swing.JButton BTN_faturamenti;
+    private javax.swing.JButton BTN_fecharTudo;
     private javax.swing.JButton BTN_pagamento;
     private javax.swing.JButton BTN_telaClientei;
     private javax.swing.JButton BTN_telaCorretor;

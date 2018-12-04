@@ -9,25 +9,24 @@ package Telas;
  *
  * @author dougl
  */
-public class telaCliente extends javax.swing.JInternalFrame {
+public class telaCorretor extends javax.swing.JInternalFrame {
 
-    private static telaCliente instancia = null;
+   private static telaCorretor instancia = null;
 
     /**
-     * Creates new form telaCliente
+     * Creates new form telaCorretor
      */
-    public telaCliente() {
+    public telaCorretor() {
         initComponents();
     }
 
-    public static telaCliente getInstancia() {
+    public static telaCorretor getInstancia() {
         if (instancia == null) {
-            instancia = new telaCliente();
+            instancia = new telaCorretor();
         }
 
         return instancia;
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -37,27 +36,35 @@ public class telaCliente extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel4 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         TXT_nome = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        TXT_cpf = new javax.swing.JTextField();
+        TXT_creci = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         TXT_telefone = new javax.swing.JTextField();
         TXT_cidade = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
         TXT_email = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        BTN_incluirCliente = new javax.swing.JButton();
-        BTN_salvarCliente = new javax.swing.JButton();
-        BTN_pesquisarCliente = new javax.swing.JButton();
-        BTN_excluirCliente = new javax.swing.JButton();
-        TXT_cpfPesquisa = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
+        BTN_incluirCorretor = new javax.swing.JButton();
+        BTN_salvarCorretor = new javax.swing.JButton();
+        BTN_pesquisarCorretor = new javax.swing.JButton();
+        BTN_excluirCorretor = new javax.swing.JButton();
+        TXT_creciPesquisa = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        TBL_tabelaCliente = new javax.swing.JTable();
+        TBL_tabelaCorretor = new javax.swing.JTable();
 
         setClosable(true);
-        setTitle("Cliente");
+        setTitle("Corretor");
+
+        jLabel4.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 24)); // NOI18N
+        jLabel4.setText("Cidade:");
+        jLabel4.setToolTipText("");
+
+        jLabel6.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 24)); // NOI18N
+        jLabel6.setText("CRECI:");
+        jLabel6.setToolTipText("");
 
         jLabel1.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 24)); // NOI18N
         jLabel1.setText("Nome:");
@@ -65,11 +72,7 @@ public class telaCliente extends javax.swing.JInternalFrame {
 
         TXT_nome.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 24)); // NOI18N
 
-        jLabel2.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 24)); // NOI18N
-        jLabel2.setText("CPF:");
-        jLabel2.setToolTipText("");
-
-        TXT_cpf.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 24)); // NOI18N
+        TXT_creci.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 24)); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 24)); // NOI18N
         jLabel3.setText("Telefone:");
@@ -79,48 +82,44 @@ public class telaCliente extends javax.swing.JInternalFrame {
 
         TXT_cidade.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 24)); // NOI18N
 
-        jLabel4.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 24)); // NOI18N
-        jLabel4.setText("Cidade:");
-        jLabel4.setToolTipText("");
-
         TXT_email.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 24)); // NOI18N
 
         jLabel5.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 24)); // NOI18N
         jLabel5.setText("E-mail:");
         jLabel5.setToolTipText("");
 
-        BTN_incluirCliente.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
-        BTN_incluirCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Telas/Incluir_Icon.png"))); // NOI18N
-        BTN_incluirCliente.setText("Incluir");
-        BTN_incluirCliente.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BTN_incluirCliente.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        BTN_incluirCorretor.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        BTN_incluirCorretor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Telas/Incluir_Icon.png"))); // NOI18N
+        BTN_incluirCorretor.setText("Incluir");
+        BTN_incluirCorretor.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        BTN_incluirCorretor.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
-        BTN_salvarCliente.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
-        BTN_salvarCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Telas/Alterar_Icon.png"))); // NOI18N
-        BTN_salvarCliente.setText("Salvar");
-        BTN_salvarCliente.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BTN_salvarCliente.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        BTN_salvarCorretor.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        BTN_salvarCorretor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Telas/Alterar_Icon.png"))); // NOI18N
+        BTN_salvarCorretor.setText("Salvar");
+        BTN_salvarCorretor.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        BTN_salvarCorretor.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
-        BTN_pesquisarCliente.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
-        BTN_pesquisarCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Telas/Pesquisar_Icon.png"))); // NOI18N
-        BTN_pesquisarCliente.setText("Pesquisar");
-        BTN_pesquisarCliente.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BTN_pesquisarCliente.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        BTN_pesquisarCorretor.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        BTN_pesquisarCorretor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Telas/Pesquisar_Icon.png"))); // NOI18N
+        BTN_pesquisarCorretor.setText("Pesquisar");
+        BTN_pesquisarCorretor.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        BTN_pesquisarCorretor.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
-        BTN_excluirCliente.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
-        BTN_excluirCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Telas/Excluir_Icon.png"))); // NOI18N
-        BTN_excluirCliente.setText("Excluir");
-        BTN_excluirCliente.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BTN_excluirCliente.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        BTN_excluirCorretor.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 18)); // NOI18N
+        BTN_excluirCorretor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Telas/Excluir_Icon.png"))); // NOI18N
+        BTN_excluirCorretor.setText("Excluir");
+        BTN_excluirCorretor.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        BTN_excluirCorretor.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
-        TXT_cpfPesquisa.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 24)); // NOI18N
+        TXT_creciPesquisa.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 24)); // NOI18N
 
-        jLabel6.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 24)); // NOI18N
-        jLabel6.setText("CPF:");
-        jLabel6.setToolTipText("");
+        jLabel2.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 24)); // NOI18N
+        jLabel2.setText("CRECI:");
+        jLabel2.setToolTipText("");
 
-        TBL_tabelaCliente.setFont(new java.awt.Font("Yu Gothic Light", 0, 18)); // NOI18N
-        TBL_tabelaCliente.setModel(new javax.swing.table.DefaultTableModel(
+        TBL_tabelaCorretor.setFont(new java.awt.Font("Yu Gothic Light", 0, 18)); // NOI18N
+        TBL_tabelaCorretor.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -131,7 +130,7 @@ public class telaCliente extends javax.swing.JInternalFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane1.setViewportView(TBL_tabelaCliente);
+        jScrollPane1.setViewportView(TBL_tabelaCorretor);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -140,21 +139,22 @@ public class telaCliente extends javax.swing.JInternalFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(TXT_email)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TXT_cpfPesquisa)
+                        .addComponent(TXT_creciPesquisa)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BTN_pesquisarCliente))
+                        .addComponent(BTN_pesquisarCorretor))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(BTN_excluirCliente)
+                        .addComponent(BTN_excluirCorretor)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(BTN_salvarCliente)
+                        .addComponent(BTN_salvarCorretor)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BTN_incluirCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(BTN_incluirCorretor, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane1)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel5)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel3)
@@ -163,17 +163,16 @@ public class telaCliente extends javax.swing.JInternalFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel4)
                                     .addComponent(TXT_cidade, javax.swing.GroupLayout.PREFERRED_SIZE, 302, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(TXT_email)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel1)
                                     .addComponent(TXT_nome, javax.swing.GroupLayout.PREFERRED_SIZE, 436, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(TXT_cpf, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel6))))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jScrollPane1))
+                                    .addComponent(TXT_creci, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel6)))
+                            .addComponent(jLabel5))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -188,7 +187,7 @@ public class telaCliente extends javax.swing.JInternalFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(TXT_nome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(TXT_cpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(TXT_creci, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -203,17 +202,17 @@ public class telaCliente extends javax.swing.JInternalFrame {
                 .addComponent(TXT_email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(BTN_incluirCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BTN_salvarCliente)
-                    .addComponent(BTN_excluirCliente))
+                    .addComponent(BTN_incluirCorretor, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BTN_salvarCorretor)
+                    .addComponent(BTN_excluirCorretor))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BTN_pesquisarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TXT_cpfPesquisa, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BTN_pesquisarCorretor, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TXT_creciPesquisa, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(346, 346, 346))
+                .addContainerGap())
         );
 
         pack();
@@ -221,14 +220,14 @@ public class telaCliente extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BTN_excluirCliente;
-    private javax.swing.JButton BTN_incluirCliente;
-    private javax.swing.JButton BTN_pesquisarCliente;
-    private javax.swing.JButton BTN_salvarCliente;
-    private javax.swing.JTable TBL_tabelaCliente;
+    private javax.swing.JButton BTN_excluirCorretor;
+    private javax.swing.JButton BTN_incluirCorretor;
+    private javax.swing.JButton BTN_pesquisarCorretor;
+    private javax.swing.JButton BTN_salvarCorretor;
+    private javax.swing.JTable TBL_tabelaCorretor;
     private javax.swing.JTextField TXT_cidade;
-    private javax.swing.JTextField TXT_cpf;
-    private javax.swing.JTextField TXT_cpfPesquisa;
+    private javax.swing.JTextField TXT_creci;
+    private javax.swing.JTextField TXT_creciPesquisa;
     private javax.swing.JTextField TXT_email;
     private javax.swing.JTextField TXT_nome;
     private javax.swing.JTextField TXT_telefone;
