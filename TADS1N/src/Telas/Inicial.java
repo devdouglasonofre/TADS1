@@ -160,6 +160,11 @@ public class Inicial extends javax.swing.JFrame {
         BTN_faturamenti.setMinimumSize(new java.awt.Dimension(120, 120));
         BTN_faturamenti.setName(""); // NOI18N
         BTN_faturamenti.setPreferredSize(new java.awt.Dimension(240, 240));
+        BTN_faturamenti.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTN_faturamentiActionPerformed(evt);
+            }
+        });
 
         BTN_pagamento.setBackground(new java.awt.Color(255, 255, 255));
         BTN_pagamento.setFont(new java.awt.Font("Yu Gothic Light", 0, 30)); // NOI18N
@@ -176,6 +181,11 @@ public class Inicial extends javax.swing.JFrame {
         BTN_pagamento.setMinimumSize(new java.awt.Dimension(120, 120));
         BTN_pagamento.setName(""); // NOI18N
         BTN_pagamento.setPreferredSize(new java.awt.Dimension(240, 240));
+        BTN_pagamento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTN_pagamentoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout paneLayout = new javax.swing.GroupLayout(pane);
         pane.setLayout(paneLayout);
@@ -258,7 +268,7 @@ public class Inicial extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BTN_telaClienteiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_telaClienteiActionPerformed
-    if (!telaCliente.getInstancia().isVisible()) {
+        if (!telaCliente.getInstancia().isVisible()) {
             pane.add(telaCliente.getInstancia());
             telaCliente.getInstancia().setVisible(true);
         } else {
@@ -276,7 +286,7 @@ public class Inicial extends javax.swing.JFrame {
     }//GEN-LAST:event_BTN_telaCorretorActionPerformed
 
     private void BTN_telaImovelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_telaImovelActionPerformed
-       if (!telaImovel.getInstancia().isVisible()) {
+        if (!telaImovel.getInstancia().isVisible()) {
             pane.add(telaImovel.getInstancia());
             telaImovel.getInstancia().setVisible(true);
         } else {
@@ -285,19 +295,43 @@ public class Inicial extends javax.swing.JFrame {
     }//GEN-LAST:event_BTN_telaImovelActionPerformed
 
     private void BTN_fecharTudoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_fecharTudoActionPerformed
-      if (telaImovel.getInstancia().isVisible() || 
-              telaCliente.getInstancia().isVisible() || 
-              telaCorretor.getInstancia().isVisible()) {
+        if (telaImovel.getInstancia().isVisible()
+                || telaCliente.getInstancia().isVisible()
+                || telaCorretor.getInstancia().isVisible()
+                || telaPagamento.getInstancia().isVisible()
+                || telaFaturamento.getInstancia().isVisible()) {
             pane.remove(telaImovel.getInstancia());
             pane.remove(telaCliente.getInstancia());
             pane.remove(telaCorretor.getInstancia());
+            pane.remove(telaPagamento.getInstancia());
+            pane.remove(telaFaturamento.getInstancia());
             telaImovel.getInstancia().setVisible(false);
             telaCliente.getInstancia().setVisible(false);
             telaCorretor.getInstancia().setVisible(false);
+            telaPagamento.getInstancia().setVisible(false);
+            telaFaturamento.getInstancia().setVisible(false);
             pane.validate();
             pane.repaint();
         }
     }//GEN-LAST:event_BTN_fecharTudoActionPerformed
+
+    private void BTN_pagamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_pagamentoActionPerformed
+        if (!telaPagamento.getInstancia().isVisible()) {
+            pane.add(telaPagamento.getInstancia());
+            telaPagamento.getInstancia().setVisible(true);
+        } else {
+            telaPagamento.getInstancia().requestFocus();
+        }
+    }//GEN-LAST:event_BTN_pagamentoActionPerformed
+
+    private void BTN_faturamentiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_faturamentiActionPerformed
+        if (!telaFaturamento.getInstancia().isVisible()) {
+            pane.add(telaFaturamento.getInstancia());
+            telaFaturamento.getInstancia().setVisible(true);
+        } else {
+            telaFaturamento.getInstancia().requestFocus();
+        }
+    }//GEN-LAST:event_BTN_faturamentiActionPerformed
 
     /**
      * @param args the command line arguments

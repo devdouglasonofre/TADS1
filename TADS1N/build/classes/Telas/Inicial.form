@@ -299,6 +299,9 @@
           <Dimension value="[240, 240]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BTN_faturamentiActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="BTN_pagamento">
       <Properties>
@@ -334,6 +337,9 @@
           <Dimension value="[240, 240]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BTN_pagamentoActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JDesktopPane" name="pane">
 
